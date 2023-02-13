@@ -1,9 +1,15 @@
+import Main from "./Main"
+import Overview from "./Overview"
+import Course1 from "./Course1"
+import dynamic from 'next/dynamic'
+const Course2 = dynamic(() => import('./Course2'))
+
 export default function Home() {
   return (
-    <div class="snap-y snap-mandatory h-full overflow-y-scroll">
-      <section class="snap-start h-[100vh]">hello</section>
-      <section class="snap-start h-[100vh]">hrrr</section>
-      <section class="snap-start h-[100vh]">heksssllo</section>
-    </div>
+    <Main>
+      <Overview/>
+      <Course1/>
+      <Course2/>
+    </Main>
   )
 }
