@@ -13,12 +13,12 @@ html, body {
   overflow: hidden;
 }
 
-.mask{
+/* .mask{
   -webkit-mask-image: linear-gradient(transparent, black 3%, black 97%, transparent);
   mask-image: linear-gradient(transparent, black 10%, black 90%, transparent);
   /* -webkit-animation: rightToLeft 5s forwards;
-  animation: rightToLeft 1s forwards; */
-}
+  animation: rightToLeft 1s forwards;
+} */
 
 .goon{
   /* background-image: linear-gradient(red 1%, yellow 2%, green 95%, red); */
