@@ -8,10 +8,10 @@
   box-sizing: border-box;
 }
 
-html, body {
+/* html, body {
   height: 100vh;
   overflow: hidden;
-}
+} */
 
 /* .mask{
   -webkit-mask-image: linear-gradient(transparent, black 3%, black 97%, transparent);
