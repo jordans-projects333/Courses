@@ -2,14 +2,17 @@ import Main from "./Main"
 import Overview from "./Overview"
 import Course1 from "./Course1"
 import dynamic from 'next/dynamic'
-const Course2 = dynamic(() => import('./Course2'))
+// const Course2 = dynamic(() => import('./Course2'))
 
 export default function Home() {
+  const onLoad = () => {
+    console.log('finished loading')
+  }
   return (
     <Main>
       <Overview/>
       <Course1/>
-      <Course2/>
+      {/* <Course2/> */}
     </Main>
   )
 }
