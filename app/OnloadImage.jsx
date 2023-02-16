@@ -25,7 +25,7 @@ const OnloadImage = ({src, alt, priority, mask}) => {
     return (
     <>
         <Image ref={blurImage} src={src} alt={alt} priority={!priority} quality={1} fill className='blur-sm object-cover' onLoadingComplete={() => blurImageLoaded()}/>
-        <Image ref={mainImage} src={src} alt={alt} priority={!priority} fill className={`opacity-0 object-cover object-right duration-500 mask`} onLoadingComplete={() => mainImageLoaded()}/>
+        <Image ref={mainImage} src={src} alt={alt} priority={!priority} fill className={`opacity-0 object-cover object-right duration-500 mask scale-110`} onLoadingComplete={() => mainImageLoaded()}/>
     </>
     )
 }
